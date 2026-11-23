@@ -1,0 +1,5 @@
+// FMPEEX only rewrites bytecode, so it compiles against nothing but Forge.
+// To try it in the dev environment, drop FMProjectE (dev jar), AkutoLib and PEEX into run/mods.
+
+dependencies {
+}

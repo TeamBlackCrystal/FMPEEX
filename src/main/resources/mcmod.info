@@ -1,0 +1,16 @@
+[
+{
+  "modid": "${modId}",
+  "name": "${modName}",
+  "description": "Makes PEEX run on FMProjectE by patching its int EMC handling to long while it loads. PEEX itself is not included.",
+  "version": "${modVersion}",
+  "mcversion": "${minecraftVersion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [ "sousuke0422" ],
+  "credits": "PEEX by akuto2",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
