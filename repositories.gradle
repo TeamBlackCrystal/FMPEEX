@@ -1,5 +1,18 @@
 // Add any additional repositories for your dependencies here.
 
 repositories {
-
+    ivy {
+        // FMProjectE's dev jar, straight from its GitHub releases
+        name = 'FMProjectE GitHub releases'
+        url = 'https://github.com/sousuke0422/ProjectE/releases/download/'
+        patternLayout {
+            artifact '[revision]/[module]-[revision]-[classifier].[ext]'
+        }
+        metadataSources {
+            artifact()
+        }
+        content {
+            includeGroup 'fmpe-github'
+        }
+    }
 }

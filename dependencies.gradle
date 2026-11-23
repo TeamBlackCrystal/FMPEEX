@@ -1,7 +1,10 @@
 // FMPEEX only rewrites bytecode, so it compiles against nothing but Forge.
-// To try it in the dev environment, drop FMProjectE (dev jar), AkutoLib and PEEX into run/mods.
+// To try it against PEEX in the dev environment, drop AkutoLib and PEEX into run/client/mods or run/server/mods.
 
 dependencies {
+    // FMPEEX requires ProjectE; FMProjectE provides it in runClient/runServer (and in the CI server start test)
+    runtimeOnlyNonPublishable('fmpe-github:FMProjectE:2.3.1:dev')
+
     testImplementation(platform('org.junit:junit-bom:5.9.2'))
     testImplementation('org.junit.jupiter:junit-jupiter')
     testRuntimeOnly('org.junit.platform:junit-platform-launcher')
