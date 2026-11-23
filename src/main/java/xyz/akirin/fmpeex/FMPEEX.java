@@ -9,7 +9,7 @@ import cpw.mods.fml.common.Mod;
     modid = FMPEEX.MODID,
     name = "FMPEEX",
     version = Tags.VERSION,
-    dependencies = "required-after:ProjectE;after:PEEX",
+    dependencies = "after:ProjectE;after:PEEX",
     acceptableRemoteVersions = "*")
 public class FMPEEX {
 
